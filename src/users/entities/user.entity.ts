@@ -20,6 +20,9 @@ export class User {
   @Column({ type: 'varchar', length: 255, select: false })
   password!: string;
 
+  @Column({ type: 'varchar', length: 255, nullable:true })
+  prueba1?: string;
+
   @Column({ type: 'boolean', default: true })
   isActive!: boolean;
 
