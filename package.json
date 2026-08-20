@@ -21,7 +21,18 @@
     "migration:generate": "typeorm-ts-node-commonjs -d src/database/data-source.ts migration:generate",
     "migration:run": "typeorm-ts-node-commonjs -d src/database/data-source.ts migration:run",
     "migration:revert": "typeorm-ts-node-commonjs -d src/database/data-source.ts migration:revert",
-    "migration:show": "typeorm-ts-node-commonjs -d src/database/data-source.ts migration:show"
+    "migration:show": "typeorm-ts-node-commonjs -d src/database/data-source.ts migration:show",
+    "migration:run:stg": "cross-env NODE_ENV=stg typeorm-ts-node-commonjs -d src/database/data-source.ts migration:run",
+"migration:revert:stg": "cross-env NODE_ENV=stg typeorm-ts-node-commonjs -d src/database/data-source.ts migration:revert",
+"migration:show:stg": "cross-env NODE_ENV=stg typeorm-ts-node-commonjs -d src/database/data-source.ts migration:show",
+
+"migration:run:prod": "cross-env NODE_ENV=prod typeorm-ts-node-commonjs -d src/database/data-source.ts migration:run",
+"migration:revert:prod": "cross-env NODE_ENV=prod typeorm-ts-node-commonjs -d src/database/data-source.ts migration:revert",
+"migration:show:prod": "cross-env NODE_ENV=prod typeorm-ts-node-commonjs -d src/database/data-source.ts migration:show",
+
+"migration:run:dev": "cross-env NODE_ENV=dev typeorm-ts-node-commonjs -d src/database/data-source.ts migration:run",
+"migration:revert:dev": "cross-env NODE_ENV=dev typeorm-ts-node-commonjs -d src/database/data-source.ts migration:revert",
+"migration:show:dev": "cross-env NODE_ENV=dev typeorm-ts-node-commonjs -d src/database/data-source.ts migration:show"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
