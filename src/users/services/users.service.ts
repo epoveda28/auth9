@@ -35,7 +35,7 @@ export class UsersService {
       email: createUserDto.email,
       password: createUserDto.password,
       isActive: createUserDto.isActive ?? true,
-      prueba1: createUserDto.prueba1
+      prueba2: createUserDto.prueba2
     });
 
     return this.usersRepository.save(user);
