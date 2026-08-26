@@ -30,5 +30,5 @@ export class CreateUserDto {
     example: 'Hola',
     description: 'Estado de ánimo',
   })
-  prueba1?: string;
+  prueba2?: string;
 }
