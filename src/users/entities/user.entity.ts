@@ -21,7 +21,7 @@ export class User {
   password!: string;
 
   @Column({ type: 'varchar', length: 255, nullable:true })
-  prueba2?: string;
+  prueba3?: string;
 
   @Column({ type: 'boolean', default: true })
   isActive!: boolean;
